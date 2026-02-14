@@ -1,0 +1,315 @@
+html {
+    height: 100%;
+    line-height: 1.5;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #71816D;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.hero {
+    text-align: center;
+    color: #261C15;
+    font-size: 3vw;
+    font-weight: 800;
+}
+
+/* ================= المنتجات ================= */
+
+.products {
+    margin: 20px 30px;
+}
+
+.tron {
+    display: flex;
+    justify-content: center;
+}
+
+.ttron {
+    width: 25% !important;
+}
+
+.product {
+    width: 100%;
+    background-color: #F7F8FB;
+    padding: 1.46vw;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1.5em;
+}
+
+.price {
+    margin: 10px 0 0;
+    font-size: max(1.76vw, 20px);
+    font-weight: 800;
+    color: #777474;
+    text-align: center;
+}
+
+/* ================= سلايدر Swiper ================= */
+
+.swiper {
+    width: 100%;
+    padding-bottom: 35px;
+}
+
+.swiper-slide {
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.swiper-slide img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 2em;
+    aspect-ratio: 3 / 4;
+}
+
+/* أزرار التنقل */
+.swiper-button-next,
+.swiper-button-prev {
+    color: #f35633 !important;
+}
+
+/* نقاط التنقل */
+.swiper-pagination-bullet {
+    background: #000;
+    opacity: 0;
+    display: none !important;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 0;
+}
+
+/* ================= العناوين ================= */
+
+.top {
+    color: #F7F8FB;
+    margin: 60px 0 30px;
+    font-size: max(2.34vw, 26px);
+    font-weight: 800;
+    text-align: center;
+}
+
+/* ================= الشحن ================= */
+
+.deliveries {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.delivery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin: auto;
+}
+
+.delivery h3 {
+    font-size: 2.5vw;
+    font-weight: 800;
+    color: #261C15;
+    margin-bottom: 0.5vw;
+}
+
+.chose {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.delivery-price {
+    font-size: 2vw;
+    font-weight: 600;
+    color: #F7F4EA;
+    text-align: center;
+}
+
+.delivery-price span {
+    color: #f35633;
+}
+
+h4 {
+    font-size: 1.5vw;
+    color: #F7F4EA;
+}
+
+.CTA {
+    font-size: 2.5vw;
+    background-color: #f35633;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 2vw;
+    border-radius: 1.5em;
+    margin: 2vh 0 5vh;
+}
+
+.CTA:hover {
+    background-color: #e04826;
+}
+
+.CTA-container {
+    text-align: center;
+}
+
+.CTA-2 {
+    text-align: center;
+    display: inline-block;
+    width: 35%;
+    padding: 1vw;
+}
+
+
+/* ================= الفوتر ================= */
+
+footer {
+    background-color: #F7F8FB;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+.social img {
+    width: max(5.12vw, 60px);
+    transition: transform 0.3s ease;
+}
+
+.social a:hover img {
+    transform: scale(1.1);
+}
+
+h5 {
+    text-align: center;
+    font-size: max(1.17vw, 14px);
+    color: #31314D;
+    margin: 5px;
+}
+
+@media (max-width: 1024px) and (min-height: 720px) {
+    .hero {
+        font-size: 5vw;
+    }
+
+    .top {
+        font-size: 3.5vw;
+    }
+
+    .price {
+        font-size: 3.5vw;
+    }
+
+    .delivery h3 {
+        font-size: 4vw;
+    }
+
+    .delivery-price {
+        font-size: 3.5vw;
+    }
+
+    h4 {
+        font-size: 2.5vw;
+    }
+
+    .CTA-2 {
+        font-size: 5vw;
+        width: 60%;
+    }
+
+    .social img {
+        width: 10vw;
+    }
+
+    h5 {
+        font-size: 2vw;
+    }
+}
+
+/* ================= موبايل ================= */
+
+@media (max-width: 480px) {
+    .hero {
+        font-size: 6vw;
+    }
+
+    .products {
+        margin: 10px;
+    }
+
+    .product {
+        padding: 2vw;
+    }
+
+    .ttron {
+        width: 50% !important;
+    }
+
+    .top {
+        font-size: 5vw;
+    }
+
+    .price {
+        font-size: 4vw;
+    }
+
+    .delivery {
+        width: 100%;
+    }
+
+    .delivery-p {
+        font-size: 4.5vw;
+        width: 90%;
+    }
+
+    .delivery h3 {
+        font-size: 6vw;
+    }
+
+    .delivery-price {
+        font-size: 5.5vw;
+    }
+
+    h4 {
+        font-size: 4vw;
+    }
+
+    .CTA-2 {
+        font-size: 5vw;
+        width: 60%;
+    }
+
+    .social img {
+        width: 13vw;
+    }
+
+    h5 {
+        font-size: 5vw;
+    }
+
+}
